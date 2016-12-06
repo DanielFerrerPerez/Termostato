@@ -4,6 +4,7 @@
 #define ENCODER_B_PIN     D6
 #define ENCODER_PUL_PIN   D5
 #define OLED_RESET         0 
+#define PASSWORD_WEB      "xxx"
 
 //--------------VARIABLES-------------------------------------
 /* Periodicas */
@@ -44,6 +45,9 @@ int          failedCounter = 0;
 /* Para pasar de real a cadena */
 String realTexto;       /* Texto entero + decimal */
 char buf[12];           /* Auxiliar */
+
+/* Activación del relé */
+bool rele;
 
 
 
